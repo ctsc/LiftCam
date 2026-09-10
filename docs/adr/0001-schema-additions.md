@@ -34,6 +34,7 @@ Needed so logout and refresh rotation can revoke tokens. Not on the original ER 
 | `password_hash` nullable | Provider-only accounts have no password |
 | `height_unit`, `weight_unit` | Profile values need units (`in`/`cm`, `lb`/`kg`) |
 | `created_at` | Account chronology |
+| `profile_picture_url` | Optional pfp at signup; default URL if skipped (Phase 4) |
 
 ### `uploads` additions
 

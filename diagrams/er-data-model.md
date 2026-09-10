@@ -26,6 +26,7 @@ erDiagram
     float bench_max
     float deadlift_max
     string favorite_lift "nullable"
+    string profile_picture_url "default avatar URL"
     string tier "default free"
     string expo_push_token "nullable, one per user"
     timestamptz created_at

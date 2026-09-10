@@ -13,6 +13,11 @@ New variables are added here in the same phase that introduces them.
 | `DATABASE_URL` | API | `postgresql://liftcam:liftcam@localhost:5433/liftcam` | Pooled connection string. In production, the Neon pooler URL. |
 | `DATABASE_DIRECT_URL` | worker | `postgresql://liftcam:liftcam@localhost:5433/liftcam` | Direct (non-pooler) connection string. Required for `FOR UPDATE SKIP LOCKED` job claims. |
 | `WORKER_POLL_INTERVAL_S` | worker | `2` | Seconds between queue polls when idle. |
+| `JWT_SECRET` | API | `dev-only-change-me-use-32+chars!!` | HS256 secret for access tokens. Must be overridden outside local dev. |
+| `JWT_ALGORITHM` | API | `HS256` | JWT signing algorithm. |
+| `ACCESS_TOKEN_TTL_S` | API | `900` | Access token lifetime in seconds (15 minutes). |
+| `REFRESH_TOKEN_TTL_S` | API | `2592000` | Refresh token lifetime in seconds (30 days). |
+| `DEFAULT_PROFILE_PICTURE_URL` | API | `https://static.liftcam.app/avatars/default.png` | Stored when signup omits `profile_picture_url`. |
 
 ## Mobile
 

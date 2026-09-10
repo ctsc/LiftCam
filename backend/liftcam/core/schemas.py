@@ -27,6 +27,7 @@ class UserRead(BaseModel):
     bench_max: float
     deadlift_max: float
     favorite_lift: str | None
+    profile_picture_url: str
     tier: str
     expo_push_token: str | None
     created_at: datetime

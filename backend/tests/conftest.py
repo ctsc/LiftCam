@@ -7,11 +7,11 @@ from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
-from alembic import command
 from alembic.config import Config
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session, sessionmaker
 
+from alembic import command
 from liftcam.core.db import _to_sync_url
 from liftcam.core.models import User
 from liftcam.core.settings import get_settings

@@ -45,24 +45,12 @@ Forbidden:
 • git add
 • git commit
 • git push
-• git pull
 • git merge
 • git rebase
 • git cherry-pick
-• git checkout
-• git switch
 • git reset
-• git restore
 • git stash
-• Creating branches
 • Deleting branches
-• Creating tags
-• Deleting tags
-• Modifying remotes
-• Creating pull requests
-• Merging pull requests
-• Editing GitHub issues
-• Editing GitHub discussions
 • Changing repository settings
 
 ## File Modification Rules
@@ -84,12 +72,9 @@ The human developer owns all version control operations.
 
 After the AI completes implementation phases, the human developer is responsible for:
 
-• Reviewing changes
-• Running git diff
 • Staging changes
 • Creating commits
 • Pushing changes
 • Creating pull requests
-• Merging changes
 
-The AI may suggest commit messages but must never execute Git write commands.
+The AI may always suggest git commands and commit messages but must never execute Git write commands.

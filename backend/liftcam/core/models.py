@@ -67,6 +67,12 @@ class User(Base):
     bench_max: Mapped[float] = mapped_column(Float, nullable=False)
     deadlift_max: Mapped[float] = mapped_column(Float, nullable=False)
     favorite_lift: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    profile_picture_url: Mapped[str] = mapped_column(
+        String(1024),
+        nullable=False,
+        default="https://static.liftcam.app/avatars/default.png",
+        server_default="https://static.liftcam.app/avatars/default.png",
+    )
     tier: Mapped[str] = mapped_column(
         String(16), nullable=False, default="free", server_default="free"
     )

@@ -34,3 +34,6 @@ backend/scripts/.models/
 .DS_Store
 Thumbs.db
 *.log
+
+.cursor
+copy.md

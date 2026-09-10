@@ -12,7 +12,7 @@ Source of truth: `diagrams/er-data-model.md` and `liftcam/core/models.py` (must 
 
 | Table | Role |
 |-------|------|
-| `users` | Account + profile. One `expo_push_token` per user (last device wins). |
+| `users` | Account + profile. One `expo_push_token` per user (last device wins). Default `profile_picture_url` when signup skips pfp. |
 | `refresh_tokens` | Opaque refresh token hashes for revocation/rotation. |
 | `uploads` | History item **and** job row. Status machine + R2 keys + failure fields + probe metadata. |
 | `segments` | Auto-detected lift windows within one upload, plus angle/calibration. |
