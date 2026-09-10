@@ -1,0 +1,84 @@
+---
+description: Core coding, architecture, comment, and anti-pattern standards. Apply on every coding task.
+alwaysApply: true
+---
+
+# Coding Standards
+
+All implementation should follow:
+
+## Human Written Code Standards
+
+Code should look written by an experienced engineer.
+
+Avoid:
+
+• AI slop patterns
+• Excessive abstraction
+• Generic helpers
+• Large generated files
+• Duplicate logic
+• Over engineering
+
+Prefer:
+
+• Clear naming
+• Simple solutions
+• Existing patterns
+• Maintainable architecture
+
+## Performance Standards
+
+Consider:
+
+• Time complexity
+• Space complexity
+• Database efficiency
+• Network efficiency
+• Rendering performance
+
+Optimize when meaningful.
+
+Do not sacrifice readability unnecessarily.
+
+## Architecture Standards
+
+Prefer:
+
+• Separation of concerns
+• High cohesion
+• Low coupling
+• Reusable abstractions
+• Clear ownership
+
+Avoid:
+
+• God classes
+• Giant components
+• Circular dependencies
+• Excessive global state
+
+# Comment Standards
+
+Generated code must follow:
+
+• No comment longer than 3 lines
+• Comments explain intent, not obvious code
+• Comments improve semantic understanding
+• No em dashes
+• Remove stale comments
+• Update outdated comments
+
+# Anti Pattern Check
+
+Do not introduce:
+
+• Duplicate functionality
+• Unnecessary abstractions
+• Dead code
+• Excessive dependencies
+• Deep nesting
+• Poor separation of concerns
+• Breaking changes without justification
+• Premature optimization
+• Unnecessary state management

@@ -1,0 +1,95 @@
+---
+description: Git is read-only for the AI. Human owns all version control. Apply on every coding task.
+alwaysApply: true
+---
+
+# Git and Version Control Rules (Mandatory)
+
+The AI coding agent is strictly prohibited from performing any Git or GitHub write operations.
+
+This applies to Claude Code, Cursor, Codex, or any other autonomous coding agent.
+
+The AI may inspect Git state, but it may never modify Git history, staging state, branches, repository state, or remote repositories.
+
+## Allowed Git Operations (Read Only)
+
+The AI may use Git commands that only retrieve information.
+
+Allowed examples:
+
+• git status
+• git diff
+• git diff --cached
+• git log
+• git show
+• git branch
+• git branch -a
+• git tag
+• git fetch
+• git remote -v
+• git blame
+• git reflog (read only)
+• Reading commits
+• Reading other branches
+• Comparing branches
+• Reviewing repository history
+
+These operations are allowed because they do not modify repository state.
+
+## Forbidden Git Operations (Write Operations)
+
+The AI must never execute commands that modify local Git state or write to GitHub.
+
+Forbidden:
+
+• git add
+• git commit
+• git push
+• git pull
+• git merge
+• git rebase
+• git cherry-pick
+• git checkout
+• git switch
+• git reset
+• git restore
+• git stash
+• Creating branches
+• Deleting branches
+• Creating tags
+• Deleting tags
+• Modifying remotes
+• Creating pull requests
+• Merging pull requests
+• Editing GitHub issues
+• Editing GitHub discussions
+• Changing repository settings
+
+## File Modification Rules
+
+The AI may modify project files only when they are part of the requested implementation.
+
+The AI must never:
+
+• Modify files to manipulate Git state
+• Revert user changes
+• Overwrite unrelated work
+• Delete unrelated files
+• Perform broad cleanup without approval
+• Modify generated files unless required
+
+## Human Git Responsibility
+
+The human developer owns all version control operations.
+
+After the AI completes implementation phases, the human developer is responsible for:
+
+• Reviewing changes
+• Running git diff
+• Staging changes
+• Creating commits
+• Pushing changes
+• Creating pull requests
+• Merging changes
+
+The AI may suggest commit messages but must never execute Git write commands.
