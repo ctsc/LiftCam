@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+*.tsbuildinfo
+mobile/ios/
+mobile/android/
+
+# Media fixtures live outside Git (see docs/validation.md once it exists)
+backend/tests/fixtures/clips/*
+!backend/tests/fixtures/clips/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
