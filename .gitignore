@@ -1,7 +1,7 @@
 # Secrets
 .env
 .env.*
-
+!.env.example
 
 # Python
 __pycache__/
@@ -25,6 +25,10 @@ mobile/android/
 # Media fixtures live outside Git (see docs/validation.md once it exists)
 backend/tests/fixtures/clips/*
 !backend/tests/fixtures/clips/.gitkeep
+
+# Phase 2 spike outputs and downloaded models
+backend/spike-out/
+backend/scripts/.models/
 
 # OS / editor
 .DS_Store

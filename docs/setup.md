@@ -45,6 +45,13 @@ mypy
 pytest
 ```
 
+Migrations (Phase 3+):
+
+```
+alembic upgrade head
+alembic downgrade base
+```
+
 ## Mobile
 
 ```
@@ -68,3 +75,16 @@ npm test
 ## Environment variables
 
 See [env.md](env.md).
+
+## Phase 2 spikes
+
+See [spikes.md](spikes.md). Short version:
+
+```
+cd backend
+.\.venv\Scripts\activate
+python scripts/make_synthetic_clips.py
+python scripts/cv_spike.py tests/fixtures/clips/synthetic_side.mp4 --label side --out spike-out/side
+```
+
+On phone (Expo Go): Capture tab → Run 8 MB / Run 16 MB → paste logs into `docs/spikes.md`.
